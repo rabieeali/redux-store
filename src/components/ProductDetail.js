@@ -32,7 +32,7 @@ const ProductDetail = () => {
         <Loading />
       ) : (
         <Container>
-          <Grid container>
+          <Grid container  marginY={7}>
             <Grid item xs={12}>
               <Paper item sx={{ margin: "3rem auto" }} elevation={5}>
                 <Button
@@ -53,18 +53,18 @@ const ProductDetail = () => {
                     xs={12}
                     sx={{ display: "flex", flexDirection: "column" }}
                   >
-                    <Typography className="fw-bold" variant="h3" component="h6">
-                      <strong>{title}</strong>
+                    <Typography sx={{paddingTop:'15px'}}>
+                      <span className="title">{title}</span>
                     </Typography>
-                    <Typography className="fw-bold" variant="h5" component="h6">
+                    <Typography className="fw-bold">
                       <strong>Category : </strong>
                       <span className="text-secondary">{category}</span>{" "}
                     </Typography>
-                    <Typography className="fw-bold" variant="h5" component="h6">
+                    <Typography className="fw-bold">
                       <strong>Price: </strong>
                       <span className="text-secondary">{price} $</span>
                     </Typography>
-                    <Typography className="fw-bold" variant="h5" component="h6">
+                    <Typography className="fw-bold">
                       <strong>Description : </strong>
                       <span className="text-secondary">{description}</span>
                     </Typography>

@@ -29,7 +29,7 @@ const ProductList = () => {
       {loading ? (
         <Loading />
       ) : (
-        <Grid marginY={5} container spacing={2}>
+        <Grid marginY={10} container spacing={2}>
           <ProductComponent />
         </Grid>
       )}

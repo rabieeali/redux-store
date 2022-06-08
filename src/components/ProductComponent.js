@@ -43,7 +43,7 @@ const ProductComponent = () => {
                 {title}
               </Typography>
               <Typography sx={{ color: "red" }} variant="h6">
-                Price : {price} $
+                Price: {price} $
               </Typography>
               <Typography>
                 <Rating
